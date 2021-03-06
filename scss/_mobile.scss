@@ -17,6 +17,7 @@
       margin-bottom: 1rem;
     }
   }
+
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -25,12 +26,12 @@
   }
 
   &.show {
-    transform: translate(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 
   .menu-nav {
     height: 75vh;
-    transform: translate(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
     font-size: 24px;
   }
 
@@ -40,7 +41,7 @@
   }
 
   .portrait {
-    background: url("../src/img/pritam_sm.jpg");
+    background: url("../src/img/pritam.jpg");
     width: 150px;
     height: 150px;
   }
