@@ -17,7 +17,9 @@ body {
 }
 
 // Headings
-
+// .name {
+//   font-size: 20px;
+// }
 h1,
 h2,
 h3 {
@@ -29,9 +31,9 @@ h3 {
   }
 
   &.sm-heading {
-    margin-bottom: 1.5rem;
+    // margin-bottom: 1.5rem;
     padding: 0.2rem 1rem;
-    background: rgba(lighten($primary-color, 2), 0.5);
+    //  background: rgba(lighten($primary-color, 2), 0.5);
     text-align: left;
   }
 }
@@ -78,24 +80,53 @@ main {
 }
 
 //About ---------------
-.about-info,
-h2 {
-  text-align: center;
-}
-
 .bio {
   font-size: 1.5rem;
 }
 
 .bio-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-top: 1rem;
   border-radius: 50%;
   border: $secondary-color 3px solid;
+  align-content: center;
 }
+
 .bio h3 {
   margin-top: 2rem;
 }
 
+// .bio li {
+//   list-style: none;
+//   color: #357efc;
+//   // float: left;
+// }
+
+.ul_list {
+  // column-count: 2;
+  // list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  padding: 0px;
+  margin: 20px 0px 0px;
+  overflow: hidden;
+  list-style: none;
+}
+
+li {
+  color: #357efc;
+}
+
+ul.ul_list li::before {
+  content: "▹";
+  color: #000;
+}
+
 //Works-------------------
+
 .projects {
   display: grid;
   grid-gap: 0.7rem;
@@ -103,20 +134,25 @@ h2 {
 
   img {
     width: 100%;
-
+    height: auto;
     border: 2px #357efc solid;
 
     &:hover {
-      opacity: 0.5;
+      // opacity: 0.5;
+      transform: scale(1.4);
       border-color: $secondary-color;
       @include easeOut;
     }
   }
 }
 
+.sm-heading {
+  margin-bottom: 20px;
+}
 //button style
 .btn {
   padding: 5px;
+  margin-left: 5px;
   // margin: 0.2rem;
   // display: block;
   // padding: 0.2rem 0.5rem;
@@ -142,6 +178,27 @@ h2 {
   // background: lighten($primary-color, 50);
   // background: #333;
   color: #333;
+}
+
+.item {
+  cursor: pointer;
+  text-align: center;
+  // border: 1px solid #357efc;
+}
+
+.item p {
+  margin-left: 5px;
+}
+
+.item ul li {
+  list-style: none;
+  float: left;
+  padding: 5px;
+}
+
+.item p:hover,
+ul li:hover {
+  color: #357efc;
 }
 
 //Contact-------------------------------
