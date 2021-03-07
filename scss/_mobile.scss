@@ -42,13 +42,14 @@
   }
 
   .menu-branding {
-    height: 25vh;
+    padding: 0.5rem;
+    height: 40vh;
     transform: translate3d(100%, 0, 0);
   }
 
   .portrait {
     background: url("../src/img/pritam.jpg");
-    width: 150px;
+    width: 250px;
     height: 150px;
     margin-bottom: 1rem;
   }
@@ -75,5 +76,18 @@
 
   .ul_list {
     display: inline;
+  }
+
+  #home {
+    text-align: left;
+  }
+  h1.sm-heading,
+  h2.sm-heading,
+  h3.sm-heading {
+    padding-left: 0px;
+  }
+
+  .boxes div {
+    padding: 1rem;
   }
 }
