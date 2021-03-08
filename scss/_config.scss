@@ -1,4 +1,4 @@
-$primary-color: #fff;
+$primary-color: #020c1b;
 $secondary-color: #357efc;
 $show-home-image: true;
 $home-image: url(../img/background.jpg);
@@ -34,7 +34,7 @@ $background-opacity: 0.6;
   @if (lightness($color) > 40) {
     @return #000;
   } @else {
-    @return #fff;
+    @return #ccd6f6;
   }
 }
 

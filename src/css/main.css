@@ -10,7 +10,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #000;
+    background: #ccd6f6;
     transition: all 0.5s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
@@ -25,7 +25,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
+  opacity: 0.7;
   visibility: hidden; }
   .menu.show {
     visibility: visible; }
@@ -41,14 +41,14 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #f2f2f2;
+    background: #000103;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #fff;
+    background: #020c1b;
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu-branding.show {
@@ -73,7 +73,7 @@
     text-transform: uppercase;
     padding: 0.5rem 0;
     font-weight: 300;
-    color: #000;
+    color: #ccd6f6;
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
@@ -95,9 +95,9 @@
   box-sizing: border-box; }
 
 body {
-  background: #fff;
-  color: #000;
-  color: #000;
+  background: #020c1b;
+  color: #ccd6f6;
+  color: #ccd6f6;
   height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -114,7 +114,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(255, 255, 255, 0.6); }
+      background: rgba(2, 12, 27, 0.6); }
 
 h1,
 h2,
@@ -175,18 +175,13 @@ main {
 
 .ul_list {
   display: grid;
-  grid-template-columns: repeat(2, minmax(140px, 200px));
+  grid-template-columns: repeat(3, minmax(140px, 200px));
   padding: 0px;
   margin: 20px 0px 0px;
-  overflow: hidden;
   list-style: none; }
 
 li {
   color: #357efc; }
-
-ul.ul_list li::before {
-  content: "▹";
-  color: #000; }
 
 .projects {
   display: grid;
@@ -216,7 +211,12 @@ ul.ul_list li::before {
 
 .item {
   cursor: pointer;
-  text-align: center; }
+  text-align: center;
+  border: 1px solid #357efc;
+  padding: 10px; }
+
+.item a {
+  color: #8892b0; }
 
 .item p {
   margin-left: 5px; }
@@ -227,7 +227,8 @@ ul.ul_list li::before {
   padding: 5px; }
 
 .item p:hover,
-ul li:hover {
+ul li:hover,
+h3 {
   color: #357efc; }
 
 .boxes {
@@ -253,8 +254,8 @@ ul li:hover {
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #e6e6e6;
-  color: #000;
+  background: black;
+  color: #ccd6f6;
   height: 60px; }
 
 @media screen and (min-width: 1171px) {
@@ -311,4 +312,31 @@ ul li:hover {
   h3.sm-heading {
     padding-left: 0px; }
   div.mail {
-    font-size: 20px; } }
+    font-size: 20px; }
+  div.item {
+    padding: 10px; }
+  .bio p,
+  h4 {
+    font-size: 1.2rem;
+    text-align: -webkit-left; }
+  .ul_list {
+    font-size: 18px;
+    display: -ms-flexbox;
+    /* IE 10 */
+    display: -webkit-flex;
+    /* Safari 6.1+. iOS 7.1+ */
+    display: flex;
+    -webkit-flex-flow: wrap column;
+    /* Safari 6.1+ */
+    flex-flow: wrap column;
+    max-height: 150px;
+    text-align: left; }
+  .ul_list li::before {
+    content: "▹";
+    line-height: 2rem; }
+  .ul_list li {
+    padding-right: 1rem; }
+  body {
+    width: 100%;
+    overflow-x: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar; } }

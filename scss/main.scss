@@ -110,10 +110,10 @@ main {
   // column-count: 2;
   // list-style: none;
   display: grid;
-  grid-template-columns: repeat(2, minmax(140px, 200px));
+  grid-template-columns: repeat(3, minmax(140px, 200px));
   padding: 0px;
   margin: 20px 0px 0px;
-  overflow: hidden;
+  //overflow: hidden;
   list-style: none;
 }
 
@@ -121,10 +121,10 @@ li {
   color: #357efc;
 }
 
-ul.ul_list li::before {
-  content: "▹";
-  color: #000;
-}
+// ul.ul_list li::before {
+//   content: "▹";
+//   color: #000;
+// }
 
 //Works-------------------
 
@@ -184,9 +184,13 @@ ul.ul_list li::before {
 .item {
   cursor: pointer;
   text-align: center;
-  // border: 1px solid #357efc;
+  border: 1px solid #357efc;
+  padding: 10px;
 }
 
+.item a {
+  color: #8892b0;
+}
 .item p {
   margin-left: 5px;
 }
@@ -198,7 +202,8 @@ ul.ul_list li::before {
 }
 
 .item p:hover,
-ul li:hover {
+ul li:hover,
+h3 {
   color: #357efc;
 }
 

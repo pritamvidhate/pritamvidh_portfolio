@@ -89,4 +89,43 @@
   div.mail {
     font-size: 20px;
   }
+
+  //Work
+
+  div.item {
+    padding: 10px;
+  }
+
+  //About
+  .bio p,
+  h4 {
+    font-size: 1.2rem;
+    text-align: -webkit-left;
+  }
+  .ul_list {
+    font-size: 18px;
+    display: -ms-flexbox; /* IE 10 */
+    display: -webkit-flex; /* Safari 6.1+. iOS 7.1+ */
+    display: flex;
+    -webkit-flex-flow: wrap column; /* Safari 6.1+ */
+    flex-flow: wrap column;
+    max-height: 150px;
+    text-align: left;
+  }
+  .ul_list li::before {
+    content: "▹";
+    line-height: 2rem;
+  }
+
+  .ul_list li {
+    padding-right: 1rem;
+  }
+
+  body {
+    width: 100%;
+    overflow-x: auto;
+    // overflow-y: hidden;
+    // -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
 }
