@@ -309,4 +309,6 @@ ul li:hover {
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
-    padding-left: 0px; } }
+    padding-left: 0px; }
+  div.mail {
+    font-size: 20px; } }
